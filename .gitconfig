@@ -1,0 +1,17 @@
+[user]
+	email = jonlong@cs.berkeley.edu
+	name = Jonathan L Long
+[color]
+	ui = yes
+[core]
+	editor = vim
+[alias]
+	tree = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	st = status --short
+	dc = diff --cached
+    d = diff
+    lp = log -p --reverse
+[push]
+	default = current
+[merge]
+	ff = yes

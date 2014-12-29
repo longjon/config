@@ -18,6 +18,8 @@ function mcd {
     mkdir -p $@ && cd $@
 }
 
+# dammit MKL
+export LD_PRELOAD=$HOME/anaconda/lib/libmkl_core.so:$HOME/anaconda/lib/libmkl_sequential.so
 
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64:/home/jonlong/anaconda/lib:/usr/local/lib
 export PYTHONPATH=/home/jonlong/caffe/python:/home/jonlong/util:/usr/lib/python2.7/dist-packages

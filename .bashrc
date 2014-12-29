@@ -21,7 +21,7 @@ function mcd {
 
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64:/home/jonlong/anaconda/lib:/usr/local/lib
 export PYTHONPATH=/home/jonlong/caffe/python:/home/jonlong/util:/usr/lib/python2.7/dist-packages
-export PATH=/home/jonlong/.local/bin:/home/jonlong/caffe/build/tools:/home/jonlong/anaconda/bin:$PATH
+export PATH=/home/jonlong/caffe/build/tools:/home/jonlong/anaconda/bin:$PATH
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return

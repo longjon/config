@@ -35,6 +35,7 @@ set cc=80
 
 au FileType python setl autoindent tabstop=4 expandtab shiftwidth=4 softtabstop=4
 au FileType c setl autoindent tabstop=2 expandtab shiftwidth=2 softtabstop=2
+au FileType cuda setl autoindent tabstop=2 expandtab shiftwidth=2 softtabstop=2
 au FileType cpp setl autoindent tabstop=2 expandtab shiftwidth=2 softtabstop=2
 au FileType javascript setl autoindent tabstop=2 expandtab shiftwidth=2 softtabstop=2
 au InsertLeave * update

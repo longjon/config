@@ -11,6 +11,8 @@ alias py="ipython console --no-banner --pylab"
 alias re="source ~/.bashrc"
 alias m="make -j"
 alias nvs="watch --interval=0.5 nvidia-smi"
+alias g=git
+alias v=vim
 
 function mcd {
     mkdir -p $@ && cd $@

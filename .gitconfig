@@ -5,13 +5,24 @@
 	ui = yes
 [core]
 	editor = vim
+	excludesfile = ~/.gitignore
 [alias]
 	tree = log --graph --decorate --pretty=oneline --abbrev-commit --all
 	st = status --short
 	dc = diff --cached
     d = diff
     lp = log -p --reverse
+	co = checkout
+	ds = diff --stat
+	c = commit
+	cam = commit -am
+	ri = rebase -i
+	a = add
+	cm = commit -m
+	rc = rebase --continue
 [push]
 	default = current
 [merge]
 	ff = yes
+[rerere]
+	enabled = true

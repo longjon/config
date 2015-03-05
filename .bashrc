@@ -14,6 +14,10 @@ alias nvs="watch --interval=0.5 nvidia-smi"
 alias g=git
 alias v=vim
 
+function run {
+    stdbuf -oL python solve.py $1 2>&1 | tee $2
+}
+
 function mcd {
     mkdir -p $@ && cd $@
 }

@@ -1,5 +1,6 @@
 alias qm="matlab -nodisplay -nojvm;stty sane"
 alias m="matlab -nosplash -nodesktop;stty sane"
+alias c=cat
 alias u=ls
 alias e=less
 alias rg="grep -R --color=auto"

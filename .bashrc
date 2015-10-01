@@ -25,7 +25,7 @@ function cde {
 }
 
 function run {
-    stdbuf -oL python solve.py $1 2>&1 | tee $2
+    stdbuf -oL python solve.py $1 $2 2>&1 | tee $3
 }
 
 function mcd {

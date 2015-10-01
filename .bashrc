@@ -28,6 +28,16 @@ function run {
     stdbuf -oL python solve.py $1 $2 2>&1 | tee $3
 }
 
+function clean {
+    dirname=/home/jonlong/x/caffe/exp/$(basename $(pwd))
+    echo $dirname
+    rm -Ir $dirname
+}
+
+function use {
+    export PYTHONPATH=/home/jonlong/$1/python:$PYTHONPATH
+}
+
 function mcd {
     mkdir -p $@ && cd $@
 }

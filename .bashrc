@@ -14,6 +14,7 @@ alias m="make -j"
 alias nvs="watch --interval=0.5 nvidia-smi"
 alias g=git
 alias v=vim
+alias sum="/home/jonlong/caffe2/tools/extra/summarize.py"
 
 function run {
     stdbuf -oL python solve.py $1 2>&1 | tee $2

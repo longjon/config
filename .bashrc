@@ -16,6 +16,14 @@ alias g=git
 alias v=vim
 alias sum="/home/jonlong/caffe2/tools/extra/summarize.py"
 
+function cdx {
+    cd /home/jonlong/x/caffe/exp/$(basename $(pwd))
+}
+
+function cde {
+    cd /home/jonlong/caffe2/exp/$(basename $(pwd))
+}
+
 function run {
     stdbuf -oL python solve.py $1 2>&1 | tee $2
 }

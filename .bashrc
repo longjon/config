@@ -16,6 +16,7 @@ alias g=git
 alias v=vim
 alias sum="/home/jonlong/caffe2/tools/extra/summarize.py"
 alias cr=clear
+alias space="du -h --max-depth=1 | sort -rh | tee space"
 
 function prof {
     PYTHONPATH=.:$PYTHONPATH caffe time -gpu $1 -iterations $2 -model $3 2>&1 | tee time

@@ -14,6 +14,7 @@ syntax on
 colorscheme elflord
 hi Search ctermbg=cyan
 hi IncSearch ctermfg=darkgrey
+hi ColorColumn ctermbg=darkgrey
 
 set showcmd
 set cul

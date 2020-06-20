@@ -31,7 +31,17 @@ function cde {
 }
 
 function run {
-    stdbuf -oL python solve.py $1 $2 2>&1 | tee $3
+    data_dir=${@: -1:1}
+    mkdir -p $data_dir
+    log_file=$data_dir/log
+    # write command as first line of log file
+    echo "$@" > $log_file
+    # and git hash as second line
+    git rev-parse HEAD >> $log_file
+    echo '---' >> $log_file
+
+    # run command and append output to log file
+    stdbuf -oL "$@" 2>&1 | tee -a $log_file
 }
 
 function clean {
